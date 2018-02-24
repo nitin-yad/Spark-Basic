@@ -23,7 +23,12 @@ object ParallelizedCollections {
       * parameter to parallelize method, like this
       * val numsRDD = sparkSession.sparkContext.parallelize(nums, 9)
       */
-    println(numsRDD.reduce((a, b) => a + b))
+
+    /**
+      * We are adding all the number present in the array by this lambda expression
+      * (a, b) => a + b)
+      */
+    println(s"sum: ${numsRDD.reduce((a, b) => a + b)}")
   }
 
 }

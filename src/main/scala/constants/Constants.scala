@@ -7,4 +7,5 @@ object Constants {
 
   val Master = "local"
   val AppName = "Spark-Basic"
+  val TextFileLocation = "src\\main\\resources\\shakespeare.txt"
 }

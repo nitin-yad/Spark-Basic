@@ -10,7 +10,7 @@ import impl.SessionManager
   * Accumulator are like shared variables. Tasks running on a cluster can add to it using the add method.
   * However, they cannot read its value. Only the driver program can read accumulator's value.
   */
-class Accumulator {
+object Accumulator {
 
   def main(args: Array[String]): Unit = {
 
